@@ -30,3 +30,10 @@ function price(){
 }
 
 console.log(price(10, 20, 30, 40))
+
+//Setando um valor de parametro default
+function carLoan(loan, rate, year = 5){
+    return ((loan * rate) / 100) * year;
+}
+
+console.log(carLoan(20000, 2.5))
